@@ -1,0 +1,117 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: #f6fffa;
+  color: #181313;
+  overflow: hidden;
+}
+
+#game-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#gameCanvas {
+  background: rgb(148, 54, 54);
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 30;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #333;
+  color: rgb(148, 54, 54);
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: rgb(172, 182, 181);
+}
+
+button:active {
+  background-color: rgb(172, 182, 181);
+}
+
+.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+#respawnBtn {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 30;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #333;
+  color: rgb(148, 54, 54);
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease; /* Smooth transition */
+}
+#respawnBtn:hover {
+  background-color: #555; /* Brighter or different shade */
+  color: rgb(172, 182, 181); /* Optional: Change text color on hover */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); /* Optional: deeper shadow */
+}
+#watermark {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  z-index: 25;
+  opacity: 1; /* Full visibility */
+  filter: none; /* No brightness effect */
+  mix-blend-mode: normal; /* Stop blending with white canvas */
+}
+
+#mobile-warning {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 40vh;
+  box-sizing: border-box;
+}
+
+/* Show warning and hide game only on small screens */
+@media screen and (max-width: 768px) {
+  #mobile-warning {
+    display: block;
+  }
+
+  #game-container {
+    display: none !important;
+  }
+}
