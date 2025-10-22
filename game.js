@@ -180,7 +180,7 @@ function updateProjectiles() {
 }
 
 function drawProjectiles() {
-  ctx.fillStyle = "green";
+  ctx.fillStyle = "red";
   [...player.projectiles, ...enemy.projectiles].forEach((proj) => {
     ctx.beginPath();
     ctx.arc(proj.x, proj.y, proj.radius, 0, Math.PI * 2);
@@ -190,11 +190,12 @@ function drawProjectiles() {
 
 function drawTitle() {
   ctx.save();
-  ctx.fillStyle = "rgba(40, 43, 43, 0.95)";
+  ctx.fillStyle = "rgba(149, 228, 228, 0.95)";
   ctx.font = "bold 50px Arial";
   ctx.textAlign = "center";
-  ctx.filter = "brightness(1.4) drop-shadow(0 0 10px rgba(42, 44, 44, 0.96))";
-  ctx.shadowColor = "rgba(0, 0, 0, 0.4)";
+  ctx.filter =
+    "brightness(1.4) drop-shadow(0 0 10px rgba(243, 243, 243, 0.96))";
+  ctx.shadowColor = "rgba(248, 248, 248, 0.4)";
   ctx.shadowOffsetX = 0;
   ctx.shadowOffsetY = 0;
   ctx.shadowBlur = 10;

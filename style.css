@@ -14,7 +14,7 @@ body {
 }
 
 #gameCanvas {
-  background: rgb(148, 54, 54);
+  background: rgb(45, 212, 177);
   display: block;
   width: 100vw;
   height: 100vh;
@@ -22,7 +22,7 @@ body {
 
 button {
   padding: 10px 15px;
-  background-color: #444;
+  background-color: rgb(45, 212, 177);
   color: white;
   border: none;
   cursor: pointer;
@@ -31,7 +31,7 @@ button {
   cursor: pointer;
   border-radius: 20px;
   background-color: #333;
-  color: rgb(148, 54, 54);
+  color: rgb(45, 212, 177);
   border: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease; /* Smooth transition */
@@ -66,7 +66,7 @@ button:active {
   cursor: pointer;
   border-radius: 20px;
   background-color: #333;
-  color: rgb(148, 54, 54);
+  color: rgb(45, 212, 177)
   border: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease; /* Smooth transition */
@@ -96,7 +96,7 @@ button:active {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  background-color: rgb(45, 212, 177);
   color: white;
   font-size: 24px;
   text-align: center;
